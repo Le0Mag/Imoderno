@@ -36,6 +36,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 .icon-wordpress:before {
   content: "\e900";
   color: #21759b;
@@ -54,6 +56,9 @@
 }
 .icon-shopping-cart:before {
   content: "\f07a";
+}
+.icon-heart-o:before {
+  content: "\f08a";
 }
 .icon-phone:before {
   content: "\f095";
@@ -85,6 +90,9 @@
 .icon-linkedin:before {
   content: "\f0e1";
 }
+.icon-comment-o:before {
+  content: "\f0e5";
+}
 .icon-bolt:before {
   content: "\f0e7";
 }
@@ -106,3 +114,5 @@
 .icon-google:before {
   content: "\f1a0";
 }
+
+
