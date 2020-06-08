@@ -200,8 +200,8 @@ background-color: $tomato;
   right: 0;
   height: 0;
   overflow: hidden;
-
-}
+  z-index: 1;
+} 
 
 .basket__box,
 .notification__box,
@@ -341,6 +341,11 @@ background-color: $tomato;
 
 .icons-color::before {
   color: $tomato;
+}
+
+.header__btn-menu,
+.menu__btn {
+  display: none;
 }
 
 // End header
@@ -1264,3 +1269,8 @@ button.icon-unsorted {
 }
 
 //End Product-Page
+
+
+
+
+@import 'media';
