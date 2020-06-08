@@ -131,7 +131,7 @@
     transition: all .5s; 
     position: absolute; 
     height: 70px;
-    background-color: $grey;
+    background-color: #fff;
     left: 100%;
     right: -100%;
     z-index: 2;
@@ -177,6 +177,10 @@
 }
 
 @media (max-width: 390px) {
+  .menu__btn {
+    left: 10px;
+  }
+
   .header__box {
     &.active {
       left: 47px;
@@ -190,8 +194,11 @@
 
 @media (max-width: 360px) {
   .user {
-    margin-left: 10px;
     margin-right: 0;
+  }
+
+  .basket {
+    margin-right: 10px;
   }
 
   .header__logo {
