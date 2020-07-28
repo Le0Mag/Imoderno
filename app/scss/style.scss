@@ -351,6 +351,113 @@
 }
 
 // End header
+// Start modal
+#modal {
+  background-color: $green;
+  max-width: 730px;
+  width: 100%;
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.login__title {
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  @include f700;
+}
+
+.login__wrapper {
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  label {
+    position: relative;
+    display: block;
+    width: 100%;
+    &::before {
+      position: absolute;
+      font-family: "icomoon";
+      font-size: 14px;
+      color: #fff;
+      left: 18px;
+      top: 9px;
+    }
+  }
+
+  .login__lable-name::before {
+    content: "\f007";
+  }
+
+  .login__lable-pass::before {
+    content: "\f023";
+  }
+
+  input {
+    height: 43px;
+    margin-bottom: 8px;
+    border: none;
+    background-color: #76ae36;
+    color: #fff;
+    font-size: 14px;
+    padding-left: 40px;
+    padding-right: 20px;
+    display: block;
+    width: 100%;
+    &::placeholder {
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+
+  button {
+    margin-top: 19px;
+    padding: 18px 0 16px;
+    background-color: #fff;
+    width: 140px;
+    text-transform: uppercase;
+    border: none;
+    margin-right: 10px;
+    @include f700;
+    color: #000;
+    text-align: center;
+    box-shadow: 0px 2px 2px 0px rgba(118, 174, 54, 0.75);
+  }
+
+  .creat-acc {
+    margin-top: 19px;
+    padding: 15px 0 15px 28px;
+    text-align: center;
+    background-color: #76ae36;
+    color: #fff;
+    font-size: 18px;
+    width: 245px;
+    position: relative;
+    &::before {
+      content: "\f044";
+      position: absolute;
+      font-family: "icomoon";
+      top: 15 px;
+      left: 35px;
+    }
+  }
+
+  .lost-pass {
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+  }
+}
+.fancybox-button svg path {
+  color: #fff;
+}
+
+// End modal
 // Start search
 
 .search {
@@ -1604,7 +1711,7 @@ button.icon-unsorted {
   padding-top: 23px;
   font-size: 16px;
   @include f300;
-  color: #707070; 
+  color: #707070;
   span {
     font-size: 20px;
     @include f700;
@@ -1614,7 +1721,7 @@ button.icon-unsorted {
       content: "\f07a";
       color: #a6b5bb;
       padding-right: 20px;
-      font-family: 'icomoon';
+      font-family: "icomoon";
     }
   }
 }
@@ -1626,8 +1733,8 @@ button.icon-unsorted {
 .information__line {
   font-size: 14px;
   color: #70838d;
-   margin-top: 20px;
-   line-height: 18px;
+  margin-top: 20px;
+  line-height: 18px;
   span {
     color: $bg;
     @include f500;
@@ -1635,5 +1742,93 @@ button.icon-unsorted {
 }
 
 //End Product-One
+
+//Start Page-404
+.page-404__wrapper,
+.about__wrapper {
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  margin-bottom: 150px;
+}
+
+.page-404__head,
+.about__head {
+  font-size: 24px;
+  color: #444;
+  padding: 23px 27px;
+  @include f500;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.page-404__inner {
+  text-align: center;
+  background-color: $green;
+  color: #fff;
+}
+
+.page-404__404 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 300px;
+  color: #fff;
+  padding-top: 70px;
+  line-height: 300px;
+  padding-bottom: 20px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/page-404.png);
+    width: 157px;
+    height: 301px;
+    margin-left: 20px;
+  }
+}
+
+.page-404__title {
+  margin-bottom: 30px;
+  @include f300;
+  font-size: 30px;
+}
+
+.page-404__text {
+  max-width: 501px;
+  margin: 0 auto;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.page-404__link {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 20px 30px 16px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-bottom: 100px;
+}
+
+//End Page-404
+
+//Start About US
+
+.about__inner {
+  padding: 0 50px;
+}
+
+.about__box {
+  h3 {
+    font-size: 20px;
+    @include f700;
+    color: #444;
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 40px;
+  }
+}
+//End About US
 
 @import "media";
